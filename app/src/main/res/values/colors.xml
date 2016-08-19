@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="loading_fail_color">#E7E7E7</color>
+    <color name="topBackgorundColor">#F5F5F5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="light_gray">#D5D5D5</color>
+    <color name="color_dialog_bg">#90000000</color>
+    <color name="scan_bg">#8f000000</color>
+    <color name="dark_gray">#999999</color>
+    <color name="tabTextcolor_gray">#606060</color>
+    <color name="tabTextColor_red">#F42B33</color>
+    <color name="text_content_gray">#626262</color>
+    <color name="text_title_gray">#656565</color>
+    <color name="topagelistbg">#F4F4F4</color>
+    <color name="topnav">#F5F5F5</color>
+    <color name="base_end_color_pressed">#ffd7d7d7</color>
+    <color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+</resources>

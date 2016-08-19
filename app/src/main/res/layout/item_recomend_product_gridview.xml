@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gridView_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/nullview"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/nullview"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_rect_gray">
+
+        <cn.com.custom.widgetproject.widget.MatchParentNetworkImage
+            android:id="@+id/iv_productImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0.5dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_productTilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/container"
+        android:layout_below="@+id/container"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:textColor="@color/text_title_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_jpPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/container"
+        android:layout_below="@+id/tv_productTilte"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_jpNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_jpPrice"
+        android:layout_alignBottom="@+id/tv_jpPrice"
+        android:layout_below="@+id/tv_productTilte"
+        android:layout_toRightOf="@+id/tv_jpPrice"
+        android:gravity="left"
+        android:text="円/"
+        android:textColor="@color/black"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_rmbPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_jpPrice"
+        android:layout_alignBottom="@+id/tv_jpPrice"
+        android:layout_below="@+id/tv_productTilte"
+        android:layout_toRightOf="@+id/tv_jpNum"
+        android:text="-"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_rmbNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_jpPrice"
+        android:layout_alignBottom="@+id/tv_jpPrice"
+        android:layout_below="@+id/tv_productTilte"
+        android:layout_toRightOf="@+id/tv_rmbPrice"
+        android:gravity="left"
+        android:text="元"
+        android:textColor="@color/black"
+        android:textSize="8sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/tv_rmbNum" />
+
+</RelativeLayout>

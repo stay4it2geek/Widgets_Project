@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/bannerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="370dp">
+
+            <cn.com.custom.widgetproject.widget.ImageViewpagerView
+                android:id="@+id/productGallaryView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/productdetail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <cn.com.custom.widgetproject.widget.ListViewFitScrollView
+            android:id="@+id/compareListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@color/gray"
+            android:dividerHeight="0.5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#F5F5F5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="商品简介"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+            <cn.com.custom.widgetproject.widget.TranslateCheckableLayout
+                android:id="@+id/rl_translate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="right">
+
+                <RadioButton
+                    android:id="@+id/translateRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_translate_btn"
+                    android:button="@null"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tv_fanyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/translateRadioButton"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="5dp"
+                    android:text="翻译"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
+
+
+            </cn.com.custom.widgetproject.widget.TranslateCheckableLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_productIntrduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1000"
+                android:padding="15dp"
+                android:textColor="@color/text_content_gray"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+
+    <cn.com.custom.widgetproject.widget.ErrorTipsView
+        android:id="@+id/error_tipsview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+</FrameLayout>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/common_framlayout"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:id="@+id/productLayout"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+       <cn.com.custom.widgetproject.widget.CommonCategoryImage
+           android:id="@+id/category_net_image"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <cn.com.custom.widgetproject.widget.GridViewFitScrollView
+           android:id="@+id/gridView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:dividerHeight="0dp"
+           android:horizontalSpacing="10dp"
+           android:numColumns="2"
+           android:scrollbars="none"
+           android:verticalSpacing="10dp" />
+   </LinearLayout>
+
+    <cn.com.custom.widgetproject.widget.LoadBallViewFragment
+        android:id="@+id/load_ball_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</FrameLayout>

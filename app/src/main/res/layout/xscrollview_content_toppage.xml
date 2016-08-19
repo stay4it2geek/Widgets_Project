@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/bannerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <cn.com.custom.widgetproject.widget.ImageViewpagerView
+            android:id="@+id/widget_bannerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tabLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabNavigation_height"
+        android:orientation="horizontal">
+
+        <cn.com.custom.widgetproject.widget.SyncHorizontalScrollView
+            android:id="@+id/mHsv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabNavigation_height"
+            android:layout_gravity="center"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/productViewpagerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topagelistbg">
+
+        <cn.com.custom.widgetproject.widget.AutoFitSrollerViewViewPager
+            android:id="@+id/productViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

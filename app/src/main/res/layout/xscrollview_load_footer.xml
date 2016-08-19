@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/topagelistbg"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <cn.com.custom.widgetproject.widget.RoundProgressBar xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/footer_progressbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="60dp"
+            android_custom:roundColor="@android:color/transparent"
+            android_custom:roundProgressColor="#aaa"
+            android_custom:roundWidth="1dp"
+            android_custom:textIsDisplayable="false" />
+
+        <TextView
+            android:id="@+id/footer_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/footer_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/footer_hint_text"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

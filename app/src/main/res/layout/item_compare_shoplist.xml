@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_shop"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shopName"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/rl_logo">
+
+            <TextView
+                android:id="@+id/tv_shopName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/text_content_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="1dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/rl_shopName"
+            android:layout_toRightOf="@+id/rl_shopName"
+            android:background="#D1D1D1"
+            android:text="tv_shopName" />
+
+        <TextView
+            android:id="@+id/tv_jpPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/vertical_line"
+            android:text="-"
+            android:textColor="@color/tabTextColor_red"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_jpNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_productTilte"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_jpPrice"
+            android:text="円 / "
+            android:textColor="@color/tabTextColor_red"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_rmbPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_productTilte"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_jpNum"
+            android:text="-"
+            android:textColor="@color/tabTextColor_red"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rmbNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_productTilte"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/tv_rmbPrice"
+            android:text="元"
+            android:textColor="@color/tabTextColor_red"
+            android:textSize="12sp" />
+
+
+        <FrameLayout
+            android:id="@+id/rl_checksee"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/seeImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/btn_checksee" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

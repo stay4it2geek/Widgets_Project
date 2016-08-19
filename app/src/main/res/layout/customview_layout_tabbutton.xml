@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.com.custom.widgetproject.widget.CheckableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/checkableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <cn.com.custom.widgetproject.widget.CheckableImageLayout
+        android:id="@+id/tab_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_iv"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:background="@color/colorWhite"
+        android:textSize="12dp" />
+
+</cn.com.custom.widgetproject.widget.CheckableLayout>

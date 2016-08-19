@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:background="@color/topagelistbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_content"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/header_text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_to_refresh"
+                android:textColor="@color/dark_gray" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/header_text_layout">
+
+            <View
+                android:id="@+id/jiantou"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/img_jiantou" />
+
+            <cn.com.custom.widgetproject.widget.RoundProgressBar xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/refreshing_bar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android_custom:roundColor="@android:color/transparent"
+                android_custom:roundProgressColor="#aaa"
+                android_custom:roundWidth="1dp"
+                android_custom:textIsDisplayable="false" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/header_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/header_text_layout"
+            android:contentDescription="@null"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
